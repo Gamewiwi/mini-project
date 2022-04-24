@@ -14,11 +14,12 @@ body {
 main {
   display: grid;
   grid-template-columns: 640px 800px;
-  grid-template-rows: 860px;
+  /* grid-template-rows: 860px; */
 }
 /* cl-left */
 .cl-left > .container {
   margin: 0 165px;
+  
 }
 .container > .logo {
   padding-top: 13px;
@@ -34,7 +35,7 @@ h1 > span {
 }
 .logologin > h1 {
   font-size: 60px;
-  margin: 100px 0 40px;
+  margin: 70px 0 40px;
   padding: 0;
 }
 .logologin > p {
@@ -370,5 +371,9 @@ p.dollar2 {
   .logologin h1{
     margin: 2rem 0 1rem;
   }
-
+}
+@media screen and (min-width:1440px){
+  .main{
+    grid-template-columns: 640px auto;
+  }
 }
